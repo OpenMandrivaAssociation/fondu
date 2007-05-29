@@ -1,25 +1,24 @@
 %define name		fondu
-%define fonduversion	051011
-%define mdkrelease	%mkrel 1
+%define fonduversion	060102
+%define mdkrelease	%mkrel 2
 
-Name:        fondu
-Version:     2.0
-Release:     0.%{fonduversion}.%{mdkrelease}
-Summary:     Converts between mac and unix fonts
-License:     BSD
-Group:       Publishing
-Source0:     http://fondu.sourceforge.net/fondu_src-%{fonduversion}.tar.bz2
-#Patch0:	     fondu-%{fonduversion}-opt.patch.bz2
-Url:         http://fondu.sourceforge.net/
-BuildRoot:   %{_tmppath}/%{name}-%{version}-root
+Name:		fondu
+Version:	2.0
+Release:	0.%{fonduversion}.%{mdkrelease}
+Summary:	Converts between mac and unix fonts
+License:	BSD
+Group:		Publishing
+Source0:	http://fondu.sourceforge.net/fondu_src-%{fonduversion}.tar.bz2
+Url:		http://fondu.sourceforge.net/
+BuildRoot:	%{_tmppath}/%{name}-%{version}-root
+Conflicts:	dgen-sdl
 
 %description 
 Fondu allows you to convert a mac font into a unix one. ufond converts
 a unix font into a mac one.
 
 %prep
-%setup -n fondu
-#%patch0 -p1 -b .opt
+%setup -q -n fondu-%{fonduversion}
 
 %build
 %configure2_5x

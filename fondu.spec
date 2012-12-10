@@ -48,3 +48,33 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/man1/*
 
 
+
+
+%changelog
+* Thu Jul 24 2008 Thierry Vignaud <tvignaud@mandriva.com> 2.0-0.060102.4mdv2009.0
++ Revision: 245249
+- rebuild
+
+* Wed Jan 02 2008 Olivier Blin <oblin@mandriva.com> 2.0-0.060102.2mdv2008.1
++ Revision: 140730
+- restore BuildRoot
+
+  + Thierry Vignaud <tvignaud@mandriva.com>
+    - kill re-definition of %%buildroot on Pixel's request
+
+* Tue May 29 2007 Giuseppe Ghibò <ghibo@mandriva.com> 2.0-0.060102.2mdv2008.0
++ Revision: 32600
+- Release 060102
+- Fixed bug #19051.
+
+
+* Sat Feb 24 2007 Giuseppe Ghibò <ghibo@mandriva.com> 2.0-0.051011.1mdv2007.0
++ Revision: 125385
+- Release: 20051011 cvs.
+- Import fondu
+
+* Thu Mar 17 2005 Lenny Cartier <lenny@mandrakesoft.com> 2.0-0.041222.1mdk
+- from Emmanuel Andry <eandry@free.fr> : 
+	- New version
+	- Dropped patch 0
+

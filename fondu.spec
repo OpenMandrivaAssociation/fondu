@@ -9,7 +9,7 @@ Summary:	Converts between mac and unix fonts
 License:	BSD
 Group:		Publishing
 Source0:	http://fondu.sourceforge.net/fondu_src-%{fonduversion}.tar.bz2
-Url:		http://fondu.sourceforge.net/
+Url:		https://fondu.sourceforge.net/
 BuildRoot:	%{_tmppath}/%{name}-%{version}-root
 Conflicts:	dgen-sdl
 

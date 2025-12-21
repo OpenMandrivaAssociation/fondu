@@ -13,6 +13,11 @@ Url:		https://fondu.sourceforge.net/
 BuildRoot:	%{_tmppath}/%{name}-%{version}-root
 Conflicts:	dgen-sdl
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 %description 
 Fondu allows you to convert a mac font into a unix one. ufond converts
 a unix font into a mac one.

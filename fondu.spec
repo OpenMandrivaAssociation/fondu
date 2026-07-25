@@ -1,6 +1,6 @@
 %define name		fondu
 %define fonduversion	060102
-%define mdkrelease	%mkrel 4
+%define mdkrelease	5
 
 Name:		fondu
 Version:	2.0
